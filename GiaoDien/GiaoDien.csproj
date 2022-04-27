@@ -73,6 +73,54 @@
     <Compile Include="Forms\MainKho.designer.cs">
       <DependentUpon>MainKho.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\QLNV\UCQLNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\QLNV\UCQLNV.Designer.cs">
+      <DependentUpon>UCQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLNV\UCQLNVAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\QLNV\UCQLNVAdd.Designer.cs">
+      <DependentUpon>UCQLNVAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLNV\UCQLNV_Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\QLNV\UCQLNV_Edit.Designer.cs">
+      <DependentUpon>UCQLNV_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QLNV\UCQLNV_ViewDeils.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\QLNV\UCQLNV_ViewDeils.Designer.cs">
+      <DependentUpon>UCQLNV_ViewDeils.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ThongKe\TKLuong\UCDoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ThongKe\TKLuong\UCDoanhThu.Designer.cs">
+      <DependentUpon>UCDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ThongKe\TKLuong\UCDoanhThu_HangCU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ThongKe\TKLuong\UCDoanhThu_HangCU.Designer.cs">
+      <DependentUpon>UCDoanhThu_HangCU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ThongKe\TKLuong\UCDoanhThu_MatHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ThongKe\TKLuong\UCDoanhThu_MatHang.Designer.cs">
+      <DependentUpon>UCDoanhThu_MatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ThongKe\TKLuong\UCLuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\ThongKe\TKLuong\UCLuong.Designer.cs">
+      <DependentUpon>UCLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UserControlPromotion\UserControlsViewPromotion.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -235,6 +283,30 @@
     <EmbeddedResource Include="Forms\MainKho.resx">
       <DependentUpon>MainKho.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLNV\UCQLNV.resx">
+      <DependentUpon>UCQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLNV\UCQLNVAdd.resx">
+      <DependentUpon>UCQLNVAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLNV\UCQLNV_Edit.resx">
+      <DependentUpon>UCQLNV_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QLNV\UCQLNV_ViewDeils.resx">
+      <DependentUpon>UCQLNV_ViewDeils.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThongKe\TKLuong\UCDoanhThu.resx">
+      <DependentUpon>UCDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThongKe\TKLuong\UCDoanhThu_HangCU.resx">
+      <DependentUpon>UCDoanhThu_HangCU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThongKe\TKLuong\UCDoanhThu_MatHang.resx">
+      <DependentUpon>UCDoanhThu_MatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThongKe\TKLuong\UCLuong.resx">
+      <DependentUpon>UCLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControlPromotion\UserControlsViewPromotion.resx">
       <DependentUpon>UserControlsViewPromotion.cs</DependentUpon>
     </EmbeddedResource>
@@ -353,6 +425,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\273793115_311509870951971_7894980111370829672_n1.png" />
     <None Include="image\account_skin_type_1_48px.png" />
     <Content Include="image\bar graph.jpg" />
     <Content Include="image\Bell.jpg" />

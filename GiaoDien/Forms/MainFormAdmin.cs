@@ -19,6 +19,16 @@ namespace GiaoDien.Forms
             InitializeComponent();
             this.panelSubTK.Visible = false;
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.panelSubTK.Visible = (!this.panelSubTK.Visible) ? true : false;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
         
