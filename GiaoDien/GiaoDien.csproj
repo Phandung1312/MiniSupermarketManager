@@ -253,6 +253,24 @@
     <Compile Include="Forms\UserControlPromotion\UserControl1PromotionDetail.Designer.cs">
       <DependentUpon>UserControl1PromotionDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UserControlsSchedule\UCAddPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsSchedule\UCAddPlan.designer.cs">
+      <DependentUpon>UCAddPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsSchedule\UCCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsSchedule\UCCalendar.designer.cs">
+      <DependentUpon>UCCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsSchedule\UCSceduleSale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsSchedule\UCSceduleSale.designer.cs">
+      <DependentUpon>UCSceduleSale.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\XemTTK\US_TTKho.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -372,6 +390,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControlPromotion\UserControl1PromotionDetail.resx">
       <DependentUpon>UserControl1PromotionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsSchedule\UCAddPlan.resx">
+      <DependentUpon>UCAddPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsSchedule\UCCalendar.resx">
+      <DependentUpon>UCCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsSchedule\UCSceduleSale.resx">
+      <DependentUpon>UCSceduleSale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\XemTTK\US_TTKho.resx">
       <DependentUpon>US_TTKho.cs</DependentUpon>
