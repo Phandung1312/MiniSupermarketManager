@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D23C40A1-E6E0-45E4-9103-D9CC18D13954}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GiaoDien</RootNamespace>
+    <AssemblyName>GiaoDien</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\RJLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainFormSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormSale.Designer.cs">
+      <DependentUpon>MainFormSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainFormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormAdmin.Designer.cs">
+      <DependentUpon>MainFormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainKho.designer.cs">
+      <DependentUpon>MainKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlPromotion\UserControlsViewPromotion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlPromotion\UserControlsViewPromotion.Designer.cs">
+      <DependentUpon>UserControlsViewPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsAccount\UcAccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsAccount\UcAccount.Designer.cs">
+      <DependentUpon>UcAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsAccount\UCChangePassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsAccount\UCChangePassword.Designer.cs">
+      <DependentUpon>UCChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsAccount\UserControlsNotification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsAccount\UserControlsNotification.Designer.cs">
+      <DependentUpon>UserControlsNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsAccount\UserControlsNotificationDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsAccount\UserControlsNotificationDetail.Designer.cs">
+      <DependentUpon>UserControlsNotificationDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsBill\UCShowBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsBill\UCShowBill.Designer.cs">
+      <DependentUpon>UCShowBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsBill\UserControlBillDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsBill\UserControlBillDetail.Designer.cs">
+      <DependentUpon>UserControlBillDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsBill\UserControlEditBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsBill\UserControlEditBill.Designer.cs">
+      <DependentUpon>UserControlEditBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsProduct\UCProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsProduct\UCProduct.Designer.cs">
+      <DependentUpon>UCProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsProduct\UCProductShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsProduct\UCProductShow.Designer.cs">
+      <DependentUpon>UCProductShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Donnhap\US_AddUpdateDonNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Donnhap\US_AddUpdateDonNhap.designer.cs">
+      <DependentUpon>US_AddUpdateDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Donnhap\US_DonNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Donnhap\US_DonNhap.designer.cs">
+      <DependentUpon>US_DonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Donxuat\USXuatHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Donxuat\USXuatHang.designer.cs">
+      <DependentUpon>USXuatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Donxuat\US_AddUpdateDX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Donxuat\US_AddUpdateDX.designer.cs">
+      <DependentUpon>US_AddUpdateDX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_chitietHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_chitietHang.designer.cs">
+      <DependentUpon>US_chitietHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_chitietKeHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_chitietKeHang.designer.cs">
+      <DependentUpon>US_chitietKeHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_KeHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_KeHang.designer.cs">
+      <DependentUpon>US_KeHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TrichXuatBaoCao\US_TrichXuatBaoCao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\TrichXuatBaoCao\US_TrichXuatBaoCao.designer.cs">
+      <DependentUpon>US_TrichXuatBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlsAccount\UserControlEditprofile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlsAccount\UserControlEditprofile.Designer.cs">
+      <DependentUpon>UserControlEditprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CU\US_HangCungUng.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CU\US_HangCungUng.designer.cs">
+      <DependentUpon>US_HangCungUng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CU\US_XemCTCunUng.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CU\US_XemCTCunUng.designer.cs">
+      <DependentUpon>US_XemCTCunUng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserControlPromotion\UserControl1PromotionDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UserControlPromotion\UserControl1PromotionDetail.Designer.cs">
+      <DependentUpon>UserControl1PromotionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XemTTK\US_TTKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\XemTTK\US_TTKho.designer.cs">
+      <DependentUpon>US_TTKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\XemTTK\US_XemTTKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\XemTTK\US_XemTTKho.designer.cs">
+      <DependentUpon>US_XemTTKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainFormSale.resx">
+      <DependentUpon>MainFormSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainFormAdmin.resx">
+      <DependentUpon>MainFormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainKho.resx">
+      <DependentUpon>MainKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlPromotion\UserControlsViewPromotion.resx">
+      <DependentUpon>UserControlsViewPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsAccount\UcAccount.resx">
+      <DependentUpon>UcAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsAccount\UCChangePassword.resx">
+      <DependentUpon>UCChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsAccount\UserControlsNotification.resx">
+      <DependentUpon>UserControlsNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsAccount\UserControlsNotificationDetail.resx">
+      <DependentUpon>UserControlsNotificationDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsBill\UCShowBill.resx">
+      <DependentUpon>UCShowBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsBill\UserControlBillDetail.resx">
+      <DependentUpon>UserControlBillDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsBill\UserControlEditBill.resx">
+      <DependentUpon>UserControlEditBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsProduct\UCProduct.resx">
+      <DependentUpon>UCProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsProduct\UCProductShow.resx">
+      <DependentUpon>UCProductShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Donnhap\US_AddUpdateDonNhap.resx">
+      <DependentUpon>US_AddUpdateDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Donnhap\US_DonNhap.resx">
+      <DependentUpon>US_DonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Donxuat\USXuatHang.resx">
+      <DependentUpon>USXuatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Donxuat\US_AddUpdateDX.resx">
+      <DependentUpon>US_AddUpdateDX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeHang\US_chitietHang.resx">
+      <DependentUpon>US_chitietHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeHang\US_chitietKeHang.resx">
+      <DependentUpon>US_chitietKeHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeHang\US_KeHang.resx">
+      <DependentUpon>US_KeHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TrichXuatBaoCao\US_TrichXuatBaoCao.resx">
+      <DependentUpon>US_TrichXuatBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlsAccount\UserControlEditprofile.resx">
+      <DependentUpon>UserControlEditprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CU\US_HangCungUng.resx">
+      <DependentUpon>US_HangCungUng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CU\US_XemCTCunUng.resx">
+      <DependentUpon>US_XemCTCunUng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserControlPromotion\UserControl1PromotionDetail.resx">
+      <DependentUpon>UserControl1PromotionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XemTTK\US_TTKho.resx">
+      <DependentUpon>US_TTKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XemTTK\US_XemTTKho.resx">
+      <DependentUpon>US_XemTTKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shelves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shelves %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cooperation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-in.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="image\account_skin_type_1_48px.png" />
+    <Content Include="image\bar graph.jpg" />
+    <Content Include="image\Bell.jpg" />
+    <Content Include="image\bill.jpg" />
+    <None Include="image\bill_48px.png" />
+    <Content Include="image\calendar.jpg" />
+    <Content Include="image\clock.jpg" />
+    <None Include="image\container_truck_48px.png" />
+    <None Include="image\cristiano_ronaldo_96px.png" />
+    <Content Include="image\Cube.jpg" />
+    <None Include="image\eye_24px.png" />
+    <None Include="image\hamper_48px.png" />
+    <Content Include="image\hand truck.jpg" />
+    <Content Include="image\Home.jpg" />
+    <None Include="image\invisible_24px.png" />
+    <None Include="image\increase_48px.png" />
+    <Content Include="image\Key.jpg" />
+    <None Include="image\log_cabin_48px.png" />
+    <None Include="image\Logout_200px.png" />
+    <None Include="image\Logout_48px.png" />
+    <Content Include="image\Magnifier.jpg" />
+    <None Include="image\manager_96px.png" />
+    <Content Include="image\Notification Icon.jpg" />
+    <None Include="image\password_1_24px.png" />
+    <Content Include="image\profile.jpg" />
+    <Content Include="image\Pulse.jpg" />
+    <Content Include="image\Rectangle 2.jpg" />
+    <None Include="image\red_shopping_basket_50px.png" />
+    <None Include="image\red_shopping_basket_100px.png" />
+    <Content Include="image\right arrow.jpg" />
+    <None Include="image\sale_48px.png" />
+    <Content Include="image\shipping truck.jpg" />
+    <Content Include="image\Slice 1.jpg" />
+    <None Include="image\staff_30px.png" />
+    <None Include="image\staff_50px.png" />
+    <None Include="image\staff_48px.png" />
+    <Content Include="image\stopwatch.jpg" />
+    <None Include="image\test_account_48px.png" />
+    <None Include="image\test_account_24px.png" />
+    <None Include="image\Tear-Off Calendar_48px.png" />
+    <None Include="image\trolley_48px.png" />
+    <Content Include="image\users.jpg" />
+    <None Include="Resources\seacrhicon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
