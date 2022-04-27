@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.bt_Kehang = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,8 +43,8 @@
             this.labelUserName = new System.Windows.Forms.Label();
             this.pictureUser = new System.Windows.Forms.PictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,40 +58,23 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(30)))), ((int)(((byte)(84)))));
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.bt_Kehang);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 788);
             this.panel1.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(220, 92);
-            this.panel3.TabIndex = 4;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 92);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(220, 26);
-            this.panel4.TabIndex = 5;
             // 
             // button10
             // 
             this.button10.Dock = System.Windows.Forms.DockStyle.Top;
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.button10.ForeColor = System.Drawing.SystemColors.Control;
             this.button10.Image = global::GiaoDien.Properties.Resources.account_skin_type_1_48px;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,30 +105,31 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // bt_Kehang
             // 
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button9.ForeColor = System.Drawing.SystemColors.Control;
-            this.button9.Image = global::GiaoDien.Properties.Resources.trolley_48px;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(0, 168);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(220, 50);
-            this.button9.TabIndex = 37;
-            this.button9.Text = "Kệ Hàng                    ";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.UseVisualStyleBackColor = true;
+            this.bt_Kehang.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bt_Kehang.FlatAppearance.BorderSize = 0;
+            this.bt_Kehang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Kehang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bt_Kehang.ForeColor = System.Drawing.SystemColors.Control;
+            this.bt_Kehang.Image = global::GiaoDien.Properties.Resources.trolley_48px;
+            this.bt_Kehang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_Kehang.Location = new System.Drawing.Point(0, 168);
+            this.bt_Kehang.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_Kehang.Name = "bt_Kehang";
+            this.bt_Kehang.Size = new System.Drawing.Size(220, 50);
+            this.bt_Kehang.TabIndex = 37;
+            this.bt_Kehang.Text = "Kệ Hàng                    ";
+            this.bt_Kehang.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bt_Kehang.UseVisualStyleBackColor = true;
+            this.bt_Kehang.Click += new System.EventHandler(this.bt_Kehang_Click);
             // 
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
             this.button3.Image = global::GiaoDien.Properties.Resources.bill_48px;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -157,6 +141,23 @@
             this.button3.Text = "Hóa Đơn                   ";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 92);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(220, 26);
+            this.panel4.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(220, 92);
+            this.panel3.TabIndex = 4;
             // 
             // pictureBox1
             // 
@@ -209,11 +210,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Freestyle Script", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(370, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(379, 42);
+            this.label1.Size = new System.Drawing.Size(593, 39);
             this.label1.TabIndex = 5;
             this.label1.Text = "Mini Supermarket System Manager";
             // 
@@ -251,27 +252,27 @@
             this.panelDesktop.Size = new System.Drawing.Size(1166, 736);
             this.panelDesktop.TabIndex = 7;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("UTM Showcard", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(465, 101);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 53);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Xin Chào";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("UTM Thanh Nhac TL", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Blue;
             this.label4.Location = new System.Drawing.Point(488, 175);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 57);
+            this.label4.Size = new System.Drawing.Size(121, 42);
             this.label4.TabIndex = 1;
             this.label4.Text = "Name";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label3.Location = new System.Drawing.Point(465, 101);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 42);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Xin Chào";
             // 
             // MainFormSale
             // 
@@ -285,7 +286,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainFormSale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
@@ -308,7 +309,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button bt_Kehang;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel2;
