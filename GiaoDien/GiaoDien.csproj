@@ -46,9 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BLL_Bill.cs" />
     <Compile Include="Controls\RJLabel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DAL\DAL_Bill.cs" />
+    <Compile Include="DAL\DBHelper.cs" />
+    <Compile Include="DTO\Bill.cs" />
+    <Compile Include="DTO\BillDetail.cs" />
     <Compile Include="GUI\Forms\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -468,11 +473,7 @@
   <ItemGroup>
     <None Include="Resources\check-in.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BLL\" />
-    <Folder Include="DAL\" />
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\273793115_311509870951971_7894980111370829672_n1.png" />
     <None Include="image\account_skin_type_1_48px.png" />
