@@ -12,11 +12,6 @@ namespace GiaoDien.Forms
 {
     public partial class US_TrichXuatBaoCao : UserControl
     {
-        public Button btReport
-        {
-            get { return bt_Report ; }
-            set { }
-        }
         public US_TrichXuatBaoCao()
         {
             InitializeComponent();

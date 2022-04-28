@@ -18,65 +18,81 @@ namespace GiaoDien.Forms
         public US_AddUpdateDX()
         {
             InitializeComponent();
-            txt_Number.Enabled = false;
-            txt_Codebill.Enabled = false;
-            txt_Codeshelf.Enabled = false;
-            txt_Codewarehouse.Enabled = false;
+            txtDX.Enabled = false;
+            txtKH.Enabled = false;
+            txtKHO.Enabled = false;
+            txtNV.Enabled = false;
+            txtSL.Enabled = false;
+            txtSP.Enabled = false;
             dateTimeNX.Enabled = false;
         }
-        
+        public Button ButtonUpdate
+        {
+            get { return bt_update; }
+            set
+            {
+                bt_update = value;
+            }
+        }
+        public Label label
+        {
+            get { return lbDX; }
+            set { lbDX = value; }
+        }
+        public TextBox txt1
+        {
+            get { return txtDX; }
+            set { txtDX = value; }
+        }
         public TextBox txt2
         {
-            get { return txt_Codeshelf; }
-            set { txt_Codeshelf = value; }
+            get { return txtKH; }
+            set { txtKH = value; }
         }
         public TextBox txt3
         {
-            get { return txt_Codewarehouse; }
-            set { txt_Codewarehouse = value; }
+            get { return txtKHO; }
+            set { txtKHO = value; }
         }
-
-        public Button btAddUpdate
-        {
-            get { return bt_AddUpdate; }
-            set
-            { }
-        }
-        
         public TextBox txt4
         {
-            get { return txt_Number; }
-            set { txt_Number = value; }
+            get { return txtNV; }
+            set { txtNV = value; }
         }
-        
+        public TextBox txt5
+        {
+            get { return txtSL; }
+            set { txtSL = value; }
+        }
+        public TextBox txt6
+        {
+            get { return txtSP; }
+            set { txtSP = value; }
+        }
+
         public DateTimePicker dtNX
         {
             get { return dateTimeNX; }
             set { dateTimeNX = value; }
         }
-        public void Reload()
-        {
-            this.Visible = true;
-        }
-      
-        private void bt_Close_Click(object sender, EventArgs e)
+
+        private void bt_close_Click(object sender, EventArgs e)
         {
             this.Parent.Controls.Remove(this);
             d();
         }
 
-        private void bt_AddUpdate_Click(object sender, EventArgs e)
+        private void bt_update_Click(object sender, EventArgs e)
         {
-            US_Chitietdonxuat ds = new US_Chitietdonxuat();
-            ds.Dock = DockStyle.Fill;
-            if (bt_AddUpdate.Text == "Thêm")
+            if (bt_update.Text == "Chỉnh sửa")
             {
-                ds.dtNNCT.Visible = false;
-                ds.lbNX.Visible = false;
+                txtSL.Enabled = true;
+                txtKH.Enabled = true;
+                txtKHO.Enabled = true;
+                txtNV.Enabled = true;
+                dateTimeNX.Enabled = true;
+                bt_update.Text = "OK";
             }
-            this.Parent.Controls.Add(ds);
-            this.Visible = false;
-            ds.d = new US_Chitietdonxuat.DelegeateReload(Reload);
         }
     }
 }

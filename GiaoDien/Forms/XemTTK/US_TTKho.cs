@@ -20,8 +20,7 @@ namespace GiaoDien.Forms
         {
             this.Visible = true;
         }
-      
-        private void bt_Show_Click(object sender, EventArgs e)
+        private void bt_xem_Click(object sender, EventArgs e)
         {
             US_XemTTKho us = new US_XemTTKho();
             us.Dock = DockStyle.Fill;

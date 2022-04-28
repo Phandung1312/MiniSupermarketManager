@@ -31,12 +31,6 @@ namespace GiaoDien.Forms
                 this.Visible = true;
                 fa.Show();
             }
-            if(txtUser.Text == "sale")
-            {
-                MainFormSale fa = new MainFormSale();
-                this.Visible= true;
-                fa.Show();
-            }
 
         }
 

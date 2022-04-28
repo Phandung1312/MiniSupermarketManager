@@ -37,28 +37,36 @@ namespace GiaoDien.Forms
             childForm.Show();
 
         }
+
+       
+
+        
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        public void OpenUserControl(UserControl userControl, object sender)
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            this.panelDesktop.Controls.Clear();
-            userControl.Dock = DockStyle.Fill;
-            this.panelDesktop.Controls.Add((userControl));
+
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void bt_Kehang_Click(object sender, EventArgs e)
-        {
-            US_KeHang us = new US_KeHang();
-            us.btDel.Visible = false;
-            us.btreconmend.Visible = false;
-            us.btReturn.Visible = false;
-            OpenUserControl(us, sender);
         }
     }
 }

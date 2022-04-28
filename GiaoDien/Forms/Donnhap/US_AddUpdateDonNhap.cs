@@ -17,19 +17,25 @@ namespace GiaoDien.Forms
         public US_AddUpdateDonNhap()
         {
             InitializeComponent();
-            txt_Codesupplier.Enabled = false;
-            txt_Codebill.Enabled = false;
-            txt_Codestaff.Enabled = false;
-            txt_Money.Enabled = false;
+            txtCU.Enabled = false;
+            txtDG.Enabled = false;
+            txtHD.Enabled = false;
+            txtNV.Enabled = false;
+            txtSL.Enabled = false;
+            txtSP.Enabled = false;
+            txtTien.Enabled = false;
+            dateTimeHSD.Enabled = false;
             dateTimeNN.Enabled = false;
-            txt_Note.Enabled = false;
-            txt_Numbersector.Enabled = false;
+            dateTimeNSX.Enabled = false;
+            txtCC.Enabled = false;
         }
         public Button ButtonUpdate
         {
-            get { return bt_AddUpdate; }
+            get { return bt_update; }
             set
-            {            }
+            {
+                bt_update = value;
+            }
         }
         public Label label
         {
@@ -38,69 +44,77 @@ namespace GiaoDien.Forms
         }
         public TextBox txt1
         {
-            get { return txt_Codebill; }
-            set { txt_Codebill = value; }
+            get { return txtHD; }
+            set { txtHD = value; }
         }
         public TextBox txt2
         {
-            get { return txt_Codesupplier; }
-            set { txt_Codesupplier = value; }
+            get { return txtCU; }
+            set { txtCU = value; }
         }
         public TextBox txt3
         {
-            get { return txt_Codestaff; }
-            set { txt_Codestaff = value; }
+            get { return txtNV; }
+            set { txtNV = value; }
         }
         public TextBox txt4
         {
-            get { return txt_Money; }
-            set { txt_Money = value; }
+            get { return txtTien; }
+            set { txtTien = value; }
         }
-        
-      
+        public TextBox txt5
+        {
+            get { return txtSP; }
+            set { txtSP = value; }
+        }
+        public TextBox txt6
+        {
+            get { return txtDG; }
+            set { txtDG = value; }
+        }
         public TextBox txt7
         {
-            get { return txt_Note; }
-            set { txt_Note = value; }
+            get { return txtCC; }
+            set { txtCC = value; }
         }
         public TextBox txt8
         {
-            get { return txt_Numbersector; }
-            set { txt_Numbersector = value; }
+            get { return txtSL; }
+            set { txtSL = value; }
         }
         public DateTimePicker dtNN
         {
             get { return dateTimeNN; }
             set { dateTimeNN = value; }
         }
-      
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        public DateTimePicker dtNSX
         {
-
+            get { return dateTimeNSX; }
+            set { dateTimeNSX = value; }
         }
-        public void Reload()
+        public DateTimePicker dtHSD
         {
-            this.Visible = true;
+            get { return dateTimeHSD; }
+            set { dateTimeHSD = value; }
         }
-       
-        private void bt_Close_Click(object sender, EventArgs e)
+        private void bt_close_Click(object sender, EventArgs e)
         {
             this.Parent.Controls.Remove(this);
             d();
         }
 
-        private void bt_AddUpdate_Click(object sender, EventArgs e)
+        private void bt_update_Click(object sender, EventArgs e)
         {
-            US_ChitietHangNhap ds = new US_ChitietHangNhap();
-            ds.Dock = DockStyle.Fill;
-            if (bt_AddUpdate.Text == "Thêm")
+            if (bt_update.Text == "Chỉnh sửa")
             {
-                ds.dtNNCT.Visible = false;
-                ds.lbNN.Visible = false;
+                txtDG.Enabled = true;
+                txtNV.Enabled = true;
+                txtSL.Enabled = true;
+                dateTimeHSD.Enabled = true;
+                dateTimeNN.Enabled = true;
+                dateTimeNSX.Enabled = true;
+                bt_update.Text = "OK";
             }
-            this.Parent.Controls.Add(ds);
-            this.Visible = false;
-            ds.d = new US_ChitietHangNhap.DelegeateReload(Reload);
         }
     }
 }

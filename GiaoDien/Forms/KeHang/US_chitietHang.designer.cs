@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel5 = new System.Windows.Forms.Panel();
-            this.bt_Update = new GiaoDien.Controls.RJButton();
-            this.bt_Close = new GiaoDien.Controls.RJButton();
-            this.txtNumber = new System.Windows.Forms.TextBox();
-            this.txt_Codeproduct = new System.Windows.Forms.TextBox();
-            this.txt_CodeShelf = new System.Windows.Forms.TextBox();
+            this.bt_update = new System.Windows.Forms.Button();
+            this.bt_close = new System.Windows.Forms.Button();
+            this.txtSL = new System.Windows.Forms.TextBox();
+            this.txtMaSP = new System.Windows.Forms.TextBox();
+            this.txtMaKe = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,11 +47,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel5.Controls.Add(this.bt_Update);
-            this.panel5.Controls.Add(this.bt_Close);
-            this.panel5.Controls.Add(this.txtNumber);
-            this.panel5.Controls.Add(this.txt_Codeproduct);
-            this.panel5.Controls.Add(this.txt_CodeShelf);
+            this.panel5.Controls.Add(this.bt_update);
+            this.panel5.Controls.Add(this.bt_close);
+            this.panel5.Controls.Add(this.txtSL);
+            this.panel5.Controls.Add(this.txtMaSP);
+            this.panel5.Controls.Add(this.txtMaKe);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.label4);
@@ -62,77 +62,59 @@
             this.panel5.Size = new System.Drawing.Size(1150, 697);
             this.panel5.TabIndex = 13;
             // 
-            // bt_Update
+            // bt_update
             // 
-            this.bt_Update.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bt_Update.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bt_Update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bt_Update.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bt_Update.BorderRadius = 15;
-            this.bt_Update.BorderSize = 0;
-            this.bt_Update.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Update.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_Update.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.bt_Update.ImageKey = "(none)";
-            this.bt_Update.Location = new System.Drawing.Point(702, 262);
-            this.bt_Update.Name = "bt_Update";
-            this.bt_Update.Size = new System.Drawing.Size(117, 29);
-            this.bt_Update.TabIndex = 47;
-            this.bt_Update.TabStop = false;
-            this.bt_Update.Text = "Chỉnh sửa";
-            this.bt_Update.TextColor = System.Drawing.SystemColors.HotTrack;
-            this.bt_Update.UseMnemonic = false;
-            this.bt_Update.UseVisualStyleBackColor = false;
-            this.bt_Update.Click += new System.EventHandler(this.bt_Update_Click);
+            this.bt_update.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bt_update.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bt_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bt_update.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_update.Location = new System.Drawing.Point(751, 617);
+            this.bt_update.Name = "bt_update";
+            this.bt_update.Size = new System.Drawing.Size(113, 29);
+            this.bt_update.TabIndex = 10;
+            this.bt_update.Text = "Chỉnh sửa";
+            this.bt_update.UseVisualStyleBackColor = false;
+            this.bt_update.Click += new System.EventHandler(this.bt_update_Click_1);
             // 
-            // bt_Close
+            // bt_close
             // 
-            this.bt_Close.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bt_Close.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bt_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bt_Close.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bt_Close.BorderRadius = 15;
-            this.bt_Close.BorderSize = 0;
-            this.bt_Close.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_Close.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.bt_Close.ImageKey = "(none)";
-            this.bt_Close.Location = new System.Drawing.Point(305, 262);
-            this.bt_Close.Name = "bt_Close";
-            this.bt_Close.Size = new System.Drawing.Size(117, 29);
-            this.bt_Close.TabIndex = 46;
-            this.bt_Close.TabStop = false;
-            this.bt_Close.Text = "Hủy";
-            this.bt_Close.TextColor = System.Drawing.SystemColors.HotTrack;
-            this.bt_Close.UseMnemonic = false;
-            this.bt_Close.UseVisualStyleBackColor = false;
-            this.bt_Close.Click += new System.EventHandler(this.bt_Close_Click);
+            this.bt_close.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bt_close.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bt_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bt_close.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_close.Location = new System.Drawing.Point(285, 617);
+            this.bt_close.Name = "bt_close";
+            this.bt_close.Size = new System.Drawing.Size(113, 29);
+            this.bt_close.TabIndex = 11;
+            this.bt_close.Text = "Hủy";
+            this.bt_close.UseVisualStyleBackColor = false;
+            this.bt_close.Click += new System.EventHandler(this.bt_close_Click_1);
             // 
-            // txtNumber
+            // txtSL
             // 
-            this.txtNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtNumber.Location = new System.Drawing.Point(473, 173);
-            this.txtNumber.Name = "txtNumber";
-            this.txtNumber.Size = new System.Drawing.Size(300, 20);
-            this.txtNumber.TabIndex = 7;
+            this.txtSL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtSL.Location = new System.Drawing.Point(473, 173);
+            this.txtSL.Name = "txtSL";
+            this.txtSL.Size = new System.Drawing.Size(300, 20);
+            this.txtSL.TabIndex = 7;
             // 
-            // txt_Codeproduct
+            // txtMaSP
             // 
-            this.txt_Codeproduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txt_Codeproduct.Location = new System.Drawing.Point(473, 138);
-            this.txt_Codeproduct.Name = "txt_Codeproduct";
-            this.txt_Codeproduct.Size = new System.Drawing.Size(300, 20);
-            this.txt_Codeproduct.TabIndex = 8;
+            this.txtMaSP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMaSP.Location = new System.Drawing.Point(473, 138);
+            this.txtMaSP.Name = "txtMaSP";
+            this.txtMaSP.Size = new System.Drawing.Size(300, 20);
+            this.txtMaSP.TabIndex = 8;
             // 
-            // txt_CodeShelf
+            // txtMaKe
             // 
-            this.txt_CodeShelf.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txt_CodeShelf.Location = new System.Drawing.Point(473, 103);
-            this.txt_CodeShelf.Name = "txt_CodeShelf";
-            this.txt_CodeShelf.Size = new System.Drawing.Size(300, 20);
-            this.txt_CodeShelf.TabIndex = 9;
+            this.txtMaKe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMaKe.Location = new System.Drawing.Point(473, 103);
+            this.txtMaKe.Name = "txtMaKe";
+            this.txtMaKe.Size = new System.Drawing.Size(300, 20);
+            this.txtMaKe.TabIndex = 9;
             // 
             // label3
             // 
@@ -198,14 +180,14 @@
         #endregion
 
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txtNumber;
-        private System.Windows.Forms.TextBox txt_Codeproduct;
-        private System.Windows.Forms.TextBox txt_CodeShelf;
+        private System.Windows.Forms.Button bt_update;
+        private System.Windows.Forms.Button bt_close;
+        private System.Windows.Forms.TextBox txtSL;
+        private System.Windows.Forms.TextBox txtMaSP;
+        private System.Windows.Forms.TextBox txtMaKe;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private Controls.RJButton bt_Close;
-        private Controls.RJButton bt_Update;
     }
 }

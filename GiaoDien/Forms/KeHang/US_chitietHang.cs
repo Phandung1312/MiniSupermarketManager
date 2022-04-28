@@ -17,32 +17,22 @@ namespace GiaoDien.Forms
         public US_CTkeHang()
         {
             InitializeComponent();
-            txt_CodeShelf.Enabled = false;
-            txt_Codeproduct.Enabled = false;
-            txtNumber.Enabled = false;
+            txtMaKe.Enabled = false;
+            txtMaSP.Enabled = false;
+            txtSL.Enabled = false;
         }
-        public Button close
-        {
-            get { return bt_Close; }
-            set {  }
-        }
-        public Button update
-        {
-            get { return bt_Update; }
-            set {  }
-        }
-      
-        private void bt_Close_Click(object sender, EventArgs e)
+
+       private void bt_close_Click_1(object sender, EventArgs e)
         {
             this.Parent.Controls.Remove(this);
             d();
         }
 
-        private void bt_Update_Click(object sender, EventArgs e)
+        private void bt_update_Click_1(object sender, EventArgs e)
         {
-            txtNumber.Enabled = true;
-            if (bt_Update.Text == "Chỉnh sửa")
-                bt_Update.Text = "OK";
+            txtSL.Enabled = true;
+            if (bt_update.Text == "Chỉnh sửa")
+                bt_update.Text = "OK";
         }
     }
 }

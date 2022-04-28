@@ -34,14 +34,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_SDT = new System.Windows.Forms.TextBox();
-            this.txt_Address = new System.Windows.Forms.TextBox();
-            this.txt_Namesupplier = new System.Windows.Forms.TextBox();
-            this.txt_Email = new System.Windows.Forms.TextBox();
-            this.txt_Codesupplier = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtDC = new System.Windows.Forms.TextBox();
+            this.txtTenCU = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtMaCU = new System.Windows.Forms.TextBox();
+            this.bt_close = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.bt_AddUpdate = new GiaoDien.Controls.RJButton();
-            this.bt_Close = new GiaoDien.Controls.RJButton();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +49,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label5.Location = new System.Drawing.Point(330, 108);
+            this.label5.Location = new System.Drawing.Point(379, 104);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 19);
             this.label5.TabIndex = 6;
@@ -61,7 +60,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label7.Location = new System.Drawing.Point(607, 110);
+            this.label7.Location = new System.Drawing.Point(656, 106);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 19);
             this.label7.TabIndex = 6;
@@ -72,7 +71,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(607, 139);
+            this.label1.Location = new System.Drawing.Point(656, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 19);
             this.label1.TabIndex = 6;
@@ -83,7 +82,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label8.Location = new System.Drawing.Point(331, 139);
+            this.label8.Location = new System.Drawing.Point(380, 135);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(123, 19);
             this.label8.TabIndex = 6;
@@ -94,7 +93,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label9.Location = new System.Drawing.Point(331, 168);
+            this.label9.Location = new System.Drawing.Point(380, 164);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 19);
             this.label9.TabIndex = 6;
@@ -105,57 +104,70 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Constantia", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label4.Location = new System.Drawing.Point(529, 55);
+            this.label4.Location = new System.Drawing.Point(578, 51);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(164, 24);
+            this.label4.Size = new System.Drawing.Size(160, 24);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Hãng Cung Ứng";
+            this.label4.Text = "Tình Trạng Kho";
             // 
-            // txt_SDT
+            // txtSDT
             // 
-            this.txt_SDT.Location = new System.Drawing.Point(702, 111);
-            this.txt_SDT.Name = "txt_SDT";
-            this.txt_SDT.Size = new System.Drawing.Size(126, 20);
-            this.txt_SDT.TabIndex = 9;
+            this.txtSDT.Location = new System.Drawing.Point(751, 107);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(126, 20);
+            this.txtSDT.TabIndex = 9;
             // 
-            // txt_Address
+            // txtDC
             // 
-            this.txt_Address.Location = new System.Drawing.Point(702, 140);
-            this.txt_Address.Name = "txt_Address";
-            this.txt_Address.Size = new System.Drawing.Size(126, 20);
-            this.txt_Address.TabIndex = 9;
+            this.txtDC.Location = new System.Drawing.Point(751, 136);
+            this.txtDC.Name = "txtDC";
+            this.txtDC.Size = new System.Drawing.Size(126, 20);
+            this.txtDC.TabIndex = 9;
             // 
-            // txt_Namesupplier
+            // txtTenCU
             // 
-            this.txt_Namesupplier.Location = new System.Drawing.Point(454, 138);
-            this.txt_Namesupplier.Name = "txt_Namesupplier";
-            this.txt_Namesupplier.Size = new System.Drawing.Size(126, 20);
-            this.txt_Namesupplier.TabIndex = 9;
+            this.txtTenCU.Location = new System.Drawing.Point(503, 134);
+            this.txtTenCU.Name = "txtTenCU";
+            this.txtTenCU.Size = new System.Drawing.Size(126, 20);
+            this.txtTenCU.TabIndex = 9;
             // 
-            // txt_Email
+            // txtEmail
             // 
-            this.txt_Email.Location = new System.Drawing.Point(454, 169);
-            this.txt_Email.Name = "txt_Email";
-            this.txt_Email.Size = new System.Drawing.Size(126, 20);
-            this.txt_Email.TabIndex = 9;
+            this.txtEmail.Location = new System.Drawing.Point(503, 165);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(126, 20);
+            this.txtEmail.TabIndex = 9;
             // 
-            // txt_Codesupplier
+            // txtMaCU
             // 
-            this.txt_Codesupplier.Location = new System.Drawing.Point(454, 109);
-            this.txt_Codesupplier.Name = "txt_Codesupplier";
-            this.txt_Codesupplier.Size = new System.Drawing.Size(126, 20);
-            this.txt_Codesupplier.TabIndex = 9;
+            this.txtMaCU.Location = new System.Drawing.Point(503, 105);
+            this.txtMaCU.Name = "txtMaCU";
+            this.txtMaCU.Size = new System.Drawing.Size(126, 20);
+            this.txtMaCU.TabIndex = 9;
+            // 
+            // bt_close
+            // 
+            this.bt_close.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bt_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bt_close.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_close.Location = new System.Drawing.Point(602, 204);
+            this.bt_close.Name = "bt_close";
+            this.bt_close.Size = new System.Drawing.Size(75, 23);
+            this.bt_close.TabIndex = 11;
+            this.bt_close.Text = "Hủy";
+            this.bt_close.UseVisualStyleBackColor = false;
+            this.bt_close.Click += new System.EventHandler(this.bt_close_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel5.Controls.Add(this.bt_AddUpdate);
-            this.panel5.Controls.Add(this.bt_Close);
-            this.panel5.Controls.Add(this.txt_Codesupplier);
-            this.panel5.Controls.Add(this.txt_Email);
-            this.panel5.Controls.Add(this.txt_Namesupplier);
-            this.panel5.Controls.Add(this.txt_Address);
-            this.panel5.Controls.Add(this.txt_SDT);
+            this.panel5.Controls.Add(this.bt_close);
+            this.panel5.Controls.Add(this.txtMaCU);
+            this.panel5.Controls.Add(this.txtEmail);
+            this.panel5.Controls.Add(this.txtTenCU);
+            this.panel5.Controls.Add(this.txtDC);
+            this.panel5.Controls.Add(this.txtSDT);
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.label8);
@@ -168,51 +180,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1386, 788);
             this.panel5.TabIndex = 32;
-            // 
-            // bt_AddUpdate
-            // 
-            this.bt_AddUpdate.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bt_AddUpdate.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bt_AddUpdate.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bt_AddUpdate.BorderRadius = 15;
-            this.bt_AddUpdate.BorderSize = 0;
-            this.bt_AddUpdate.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_AddUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_AddUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_AddUpdate.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.bt_AddUpdate.Location = new System.Drawing.Point(627, 229);
-            this.bt_AddUpdate.Name = "bt_AddUpdate";
-            this.bt_AddUpdate.Size = new System.Drawing.Size(119, 29);
-            this.bt_AddUpdate.TabIndex = 13;
-            this.bt_AddUpdate.TabStop = false;
-            this.bt_AddUpdate.Text = "Chỉnh sửa";
-            this.bt_AddUpdate.TextColor = System.Drawing.SystemColors.HotTrack;
-            this.bt_AddUpdate.UseVisualStyleBackColor = false;
-            this.bt_AddUpdate.Click += new System.EventHandler(this.bt_AddUpdate_Click);
-            // 
-            // bt_Close
-            // 
-            this.bt_Close.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bt_Close.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bt_Close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bt_Close.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.bt_Close.BorderRadius = 15;
-            this.bt_Close.BorderSize = 0;
-            this.bt_Close.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.bt_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_Close.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.bt_Close.ImageKey = "(none)";
-            this.bt_Close.Location = new System.Drawing.Point(408, 229);
-            this.bt_Close.Name = "bt_Close";
-            this.bt_Close.Size = new System.Drawing.Size(119, 29);
-            this.bt_Close.TabIndex = 13;
-            this.bt_Close.TabStop = false;
-            this.bt_Close.Text = "Hủy";
-            this.bt_Close.TextColor = System.Drawing.SystemColors.HotTrack;
-            this.bt_Close.UseMnemonic = false;
-            this.bt_Close.UseVisualStyleBackColor = false;
-            this.bt_Close.Click += new System.EventHandler(this.bt_Close_Click_1);
             // 
             // US_XemCTCunUng
             // 
@@ -235,13 +202,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_SDT;
-        private System.Windows.Forms.TextBox txt_Address;
-        private System.Windows.Forms.TextBox txt_Namesupplier;
-        private System.Windows.Forms.TextBox txt_Email;
-        private System.Windows.Forms.TextBox txt_Codesupplier;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtDC;
+        private System.Windows.Forms.TextBox txtTenCU;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtMaCU;
+        private System.Windows.Forms.Button bt_close;
         private System.Windows.Forms.Panel panel5;
-        private Controls.RJButton bt_Close;
-        private Controls.RJButton bt_AddUpdate;
     }
 }

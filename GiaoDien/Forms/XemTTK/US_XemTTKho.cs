@@ -24,8 +24,8 @@ namespace GiaoDien.Forms
             txtSP.Enabled = false;
             txtTenKho.Enabled = false;
         }
-       
-        private void bt_Close_Click(object sender, EventArgs e)
+        
+        private void bt_close_Click(object sender, EventArgs e)
         {
             this.Parent.Controls.Remove(this);
             d();
