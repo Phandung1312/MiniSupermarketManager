@@ -181,71 +181,11 @@
     <Compile Include="Forms\UserControlsProduct\UCProductShow.Designer.cs">
       <DependentUpon>UCProductShow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Donnhap\US_AddUpdateDonNhap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Donnhap\US_AddUpdateDonNhap.designer.cs">
-      <DependentUpon>US_AddUpdateDonNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Donnhap\US_DonNhap.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Donnhap\US_DonNhap.designer.cs">
-      <DependentUpon>US_DonNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Donxuat\USXuatHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Donxuat\USXuatHang.designer.cs">
-      <DependentUpon>USXuatHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Donxuat\US_AddUpdateDX.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Donxuat\US_AddUpdateDX.designer.cs">
-      <DependentUpon>US_AddUpdateDX.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\KeHang\US_chitietHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\KeHang\US_chitietHang.designer.cs">
-      <DependentUpon>US_chitietHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\KeHang\US_chitietKeHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\KeHang\US_chitietKeHang.designer.cs">
-      <DependentUpon>US_chitietKeHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\KeHang\US_KeHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\KeHang\US_KeHang.designer.cs">
-      <DependentUpon>US_KeHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\TrichXuatBaoCao\US_TrichXuatBaoCao.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\TrichXuatBaoCao\US_TrichXuatBaoCao.designer.cs">
-      <DependentUpon>US_TrichXuatBaoCao.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\UserControlsAccount\UserControlEditprofile.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\UserControlsAccount\UserControlEditprofile.Designer.cs">
       <DependentUpon>UserControlEditprofile.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\CU\US_HangCungUng.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\CU\US_HangCungUng.designer.cs">
-      <DependentUpon>US_HangCungUng.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\CU\US_XemCTCunUng.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\CU\US_XemCTCunUng.designer.cs">
-      <DependentUpon>US_XemCTCunUng.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UserControlPromotion\UserControl1PromotionDetail.cs">
       <SubType>UserControl</SubType>
@@ -270,6 +210,78 @@
     </Compile>
     <Compile Include="Forms\UserControlsSchedule\UCSceduleSale.designer.cs">
       <DependentUpon>UCSceduleSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Donnhap\US_AddUpdateDonNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Donnhap\US_AddUpdateDonNhap.designer.cs">
+      <DependentUpon>US_AddUpdateDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Donnhap\US_ChitietHangNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Donnhap\US_ChitietHangNhap.designer.cs">
+      <DependentUpon>US_ChitietHangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Donnhap\US_DonNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Donnhap\US_DonNhap.designer.cs">
+      <DependentUpon>US_DonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CU\US_HangCungUng.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CU\US_HangCungUng.designer.cs">
+      <DependentUpon>US_HangCungUng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CU\US_XemCTCunUng.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CU\US_XemCTCunUng.designer.cs">
+      <DependentUpon>US_XemCTCunUng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Donxuat\USXuatHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Donxuat\USXuatHang.designer.cs">
+      <DependentUpon>USXuatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Donxuat\US_AddUpdateDX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Donxuat\US_AddUpdateDX.designer.cs">
+      <DependentUpon>US_AddUpdateDX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Donxuat\US_Chitietdonxuat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Donxuat\US_Chitietdonxuat.designer.cs">
+      <DependentUpon>US_Chitietdonxuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_chitietHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_chitietHang.designer.cs">
+      <DependentUpon>US_chitietHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_chitietKeHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_chitietKeHang.designer.cs">
+      <DependentUpon>US_chitietKeHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_KeHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\KeHang\US_KeHang.designer.cs">
+      <DependentUpon>US_KeHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TrichXuatBaoCao\US_TrichXuatBaoCao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\TrichXuatBaoCao\US_TrichXuatBaoCao.designer.cs">
+      <DependentUpon>US_TrichXuatBaoCao.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\XemTTK\US_TTKho.cs">
       <SubType>UserControl</SubType>
@@ -355,38 +367,8 @@
     <EmbeddedResource Include="Forms\UserControlsProduct\UCProductShow.resx">
       <DependentUpon>UCProductShow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Donnhap\US_AddUpdateDonNhap.resx">
-      <DependentUpon>US_AddUpdateDonNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Donnhap\US_DonNhap.resx">
-      <DependentUpon>US_DonNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Donxuat\USXuatHang.resx">
-      <DependentUpon>USXuatHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Donxuat\US_AddUpdateDX.resx">
-      <DependentUpon>US_AddUpdateDX.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\KeHang\US_chitietHang.resx">
-      <DependentUpon>US_chitietHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\KeHang\US_chitietKeHang.resx">
-      <DependentUpon>US_chitietKeHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\KeHang\US_KeHang.resx">
-      <DependentUpon>US_KeHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TrichXuatBaoCao\US_TrichXuatBaoCao.resx">
-      <DependentUpon>US_TrichXuatBaoCao.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControlsAccount\UserControlEditprofile.resx">
       <DependentUpon>UserControlEditprofile.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CU\US_HangCungUng.resx">
-      <DependentUpon>US_HangCungUng.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CU\US_XemCTCunUng.resx">
-      <DependentUpon>US_XemCTCunUng.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControlPromotion\UserControl1PromotionDetail.resx">
       <DependentUpon>UserControl1PromotionDetail.cs</DependentUpon>
@@ -399,6 +381,42 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserControlsSchedule\UCSceduleSale.resx">
       <DependentUpon>UCSceduleSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Donnhap\US_AddUpdateDonNhap.resx">
+      <DependentUpon>US_AddUpdateDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Donnhap\US_ChitietHangNhap.resx">
+      <DependentUpon>US_ChitietHangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Donnhap\US_DonNhap.resx">
+      <DependentUpon>US_DonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CU\US_HangCungUng.resx">
+      <DependentUpon>US_HangCungUng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CU\US_XemCTCunUng.resx">
+      <DependentUpon>US_XemCTCunUng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Donxuat\USXuatHang.resx">
+      <DependentUpon>USXuatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Donxuat\US_AddUpdateDX.resx">
+      <DependentUpon>US_AddUpdateDX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Donxuat\US_Chitietdonxuat.resx">
+      <DependentUpon>US_Chitietdonxuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeHang\US_chitietHang.resx">
+      <DependentUpon>US_chitietHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeHang\US_chitietKeHang.resx">
+      <DependentUpon>US_chitietKeHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeHang\US_KeHang.resx">
+      <DependentUpon>US_KeHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TrichXuatBaoCao\US_TrichXuatBaoCao.resx">
+      <DependentUpon>US_TrichXuatBaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\XemTTK\US_TTKho.resx">
       <DependentUpon>US_TTKho.cs</DependentUpon>

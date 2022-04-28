@@ -18,81 +18,65 @@ namespace GiaoDien.Forms
         public US_AddUpdateDX()
         {
             InitializeComponent();
-            txtDX.Enabled = false;
-            txtKH.Enabled = false;
-            txtKHO.Enabled = false;
-            txtNV.Enabled = false;
-            txtSL.Enabled = false;
-            txtSP.Enabled = false;
+            txt_Number.Enabled = false;
+            txt_Codebill.Enabled = false;
+            txt_Codeshelf.Enabled = false;
+            txt_Codewarehouse.Enabled = false;
             dateTimeNX.Enabled = false;
         }
-        public Button ButtonUpdate
-        {
-            get { return bt_update; }
-            set
-            {
-                bt_update = value;
-            }
-        }
-        public Label label
-        {
-            get { return lbDX; }
-            set { lbDX = value; }
-        }
-        public TextBox txt1
-        {
-            get { return txtDX; }
-            set { txtDX = value; }
-        }
+        
         public TextBox txt2
         {
-            get { return txtKH; }
-            set { txtKH = value; }
+            get { return txt_Codeshelf; }
+            set { txt_Codeshelf = value; }
         }
         public TextBox txt3
         {
-            get { return txtKHO; }
-            set { txtKHO = value; }
-        }
-        public TextBox txt4
-        {
-            get { return txtNV; }
-            set { txtNV = value; }
-        }
-        public TextBox txt5
-        {
-            get { return txtSL; }
-            set { txtSL = value; }
-        }
-        public TextBox txt6
-        {
-            get { return txtSP; }
-            set { txtSP = value; }
+            get { return txt_Codewarehouse; }
+            set { txt_Codewarehouse = value; }
         }
 
+        public Button btAddUpdate
+        {
+            get { return bt_AddUpdate; }
+            set
+            { }
+        }
+        
+        public TextBox txt4
+        {
+            get { return txt_Number; }
+            set { txt_Number = value; }
+        }
+        
         public DateTimePicker dtNX
         {
             get { return dateTimeNX; }
             set { dateTimeNX = value; }
         }
-
-        private void bt_close_Click(object sender, EventArgs e)
+        public void Reload()
+        {
+            this.Visible = true;
+        }
+      
+        private void bt_Close_Click(object sender, EventArgs e)
         {
             this.Parent.Controls.Remove(this);
             d();
         }
 
-        private void bt_update_Click(object sender, EventArgs e)
+        private void bt_AddUpdate_Click(object sender, EventArgs e)
         {
-            if (bt_update.Text == "Chỉnh sửa")
+            US_Chitietdonxuat ds = new US_Chitietdonxuat();
+            ds.Dock = DockStyle.Fill;
+            if (bt_AddUpdate.Text == "Thêm")
             {
-                txtSL.Enabled = true;
-                txtKH.Enabled = true;
-                txtKHO.Enabled = true;
-                txtNV.Enabled = true;
-                dateTimeNX.Enabled = true;
-                bt_update.Text = "OK";
+                ds.dtNNCT.Visible = false;
+                ds.lbNX.Visible = false;
             }
+            this.Parent.Controls.Add(ds);
+            this.Visible = false;
+            ds.d = new US_Chitietdonxuat.DelegeateReload(Reload);
         }
     }
 }

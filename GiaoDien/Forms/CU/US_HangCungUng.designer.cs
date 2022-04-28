@@ -28,104 +28,176 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_Del = new GiaoDien.Controls.RJButton();
+            this.bt_Recommend = new GiaoDien.Controls.RJButton();
+            this.bt_Add = new GiaoDien.Controls.RJButton();
+            this.bt_Show = new GiaoDien.Controls.RJButton();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.bt_TK = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txt_Search = new System.Windows.Forms.TextBox();
+            this.DGV_Supplier = new System.Windows.Forms.DataGridView();
+            this.bt_Search = new GiaoDien.Controls.RJButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.bt_xem = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.bt_DX = new System.Windows.Forms.Button();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel8.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Supplier)).BeginInit();
+            this.panel8.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
+            // panel1
             // 
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1386, 742);
-            this.panel2.TabIndex = 19;
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.bt_Del);
+            this.panel1.Controls.Add(this.bt_Recommend);
+            this.panel1.Controls.Add(this.bt_Add);
+            this.panel1.Controls.Add(this.bt_Show);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 605);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1166, 131);
+            this.panel1.TabIndex = 21;
             // 
-            // panel4
+            // bt_Del
             // 
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.flowLayoutPanel2);
-            this.panel4.Controls.Add(this.flowLayoutPanel1);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1386, 742);
-            this.panel4.TabIndex = 7;
+            this.bt_Del.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_Del.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_Del.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bt_Del.BorderRadius = 15;
+            this.bt_Del.BorderSize = 0;
+            this.bt_Del.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_Del.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Del.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bt_Del.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_Del.Location = new System.Drawing.Point(505, 17);
+            this.bt_Del.Name = "bt_Del";
+            this.bt_Del.Size = new System.Drawing.Size(101, 32);
+            this.bt_Del.TabIndex = 3;
+            this.bt_Del.Text = "Xóa hãng";
+            this.bt_Del.TextColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_Del.UseVisualStyleBackColor = false;
+            // 
+            // bt_Recommend
+            // 
+            this.bt_Recommend.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_Recommend.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_Recommend.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bt_Recommend.BorderRadius = 15;
+            this.bt_Recommend.BorderSize = 0;
+            this.bt_Recommend.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_Recommend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Recommend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bt_Recommend.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_Recommend.Location = new System.Drawing.Point(551, 17);
+            this.bt_Recommend.Name = "bt_Recommend";
+            this.bt_Recommend.Size = new System.Drawing.Size(101, 32);
+            this.bt_Recommend.TabIndex = 3;
+            this.bt_Recommend.Text = "Đề xuất";
+            this.bt_Recommend.TextColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_Recommend.UseVisualStyleBackColor = false;
+            // 
+            // bt_Add
+            // 
+            this.bt_Add.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_Add.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_Add.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bt_Add.BorderRadius = 15;
+            this.bt_Add.BorderSize = 0;
+            this.bt_Add.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bt_Add.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_Add.Location = new System.Drawing.Point(1015, 17);
+            this.bt_Add.Name = "bt_Add";
+            this.bt_Add.Size = new System.Drawing.Size(101, 32);
+            this.bt_Add.TabIndex = 3;
+            this.bt_Add.Text = "Thêm hãng";
+            this.bt_Add.TextColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_Add.UseVisualStyleBackColor = false;
+            this.bt_Add.Click += new System.EventHandler(this.bt_Thêm_Click);
+            // 
+            // bt_Show
+            // 
+            this.bt_Show.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_Show.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_Show.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bt_Show.BorderRadius = 15;
+            this.bt_Show.BorderSize = 0;
+            this.bt_Show.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_Show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Show.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bt_Show.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_Show.Location = new System.Drawing.Point(59, 17);
+            this.bt_Show.Name = "bt_Show";
+            this.bt_Show.Size = new System.Drawing.Size(101, 32);
+            this.bt_Show.TabIndex = 3;
+            this.bt_Show.Text = "Xem chi tiết";
+            this.bt_Show.TextColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_Show.UseVisualStyleBackColor = false;
+            this.bt_Show.Click += new System.EventHandler(this.bt_Xem_Click);
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.textBox1);
-            this.panel6.Controls.Add(this.bt_TK);
-            this.panel6.Controls.Add(this.dataGridView1);
+            this.panel6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel6.Controls.Add(this.txt_Search);
+            this.panel6.Controls.Add(this.DGV_Supplier);
+            this.panel6.Controls.Add(this.bt_Search);
             this.panel6.Controls.Add(this.panel8);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(10, 10);
+            this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1366, 732);
+            this.panel6.Size = new System.Drawing.Size(1166, 736);
             this.panel6.TabIndex = 3;
             // 
-            // textBox1
+            // txt_Search
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(1057, 95);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(128, 20);
-            this.textBox1.TabIndex = 16;
+            this.txt_Search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_Search.Location = new System.Drawing.Point(881, 99);
+            this.txt_Search.Name = "txt_Search";
+            this.txt_Search.Size = new System.Drawing.Size(128, 20);
+            this.txt_Search.TabIndex = 16;
             // 
-            // bt_TK
+            // DGV_Supplier
             // 
-            this.bt_TK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_TK.BackColor = System.Drawing.Color.Red;
-            this.bt_TK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_TK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_TK.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bt_TK.Location = new System.Drawing.Point(1202, 92);
-            this.bt_TK.Name = "bt_TK";
-            this.bt_TK.Size = new System.Drawing.Size(106, 23);
-            this.bt_TK.TabIndex = 15;
-            this.bt_TK.Text = "Tìm kiếm";
-            this.bt_TK.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.DGV_Supplier.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 130);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1290, 579);
-            this.dataGridView1.TabIndex = 14;
+            this.DGV_Supplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGV_Supplier.Location = new System.Drawing.Point(38, 130);
+            this.DGV_Supplier.Name = "DGV_Supplier";
+            this.DGV_Supplier.Size = new System.Drawing.Size(1090, 446);
+            this.DGV_Supplier.TabIndex = 14;
+            // 
+            // bt_Search
+            // 
+            this.bt_Search.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_Search.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bt_Search.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.bt_Search.BorderRadius = 15;
+            this.bt_Search.BorderSize = 0;
+            this.bt_Search.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bt_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bt_Search.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_Search.Location = new System.Drawing.Point(1015, 92);
+            this.bt_Search.Name = "bt_Search";
+            this.bt_Search.Size = new System.Drawing.Size(101, 32);
+            this.bt_Search.TabIndex = 3;
+            this.bt_Search.Text = "Tìm kiếm";
+            this.bt_Search.TextColor = System.Drawing.SystemColors.HotTrack;
+            this.bt_Search.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
             this.panel8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel8.Controls.Add(this.label2);
-            this.panel8.Location = new System.Drawing.Point(551, 23);
+            this.panel8.Location = new System.Drawing.Point(317, 23);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(240, 43);
+            this.panel8.Size = new System.Drawing.Size(411, 43);
             this.panel8.TabIndex = 13;
             // 
             // label2
@@ -136,136 +208,63 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label2.Location = new System.Drawing.Point(19, 6);
+            this.label2.Location = new System.Drawing.Point(24, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 31);
+            this.label2.Size = new System.Drawing.Size(363, 31);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Tình trạng Kho";
+            this.label2.Text = "Danh sách hãng Cung Ứng";
             // 
-            // flowLayoutPanel2
+            // panel4
             // 
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(1376, 10);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(10, 732);
-            this.flowLayoutPanel2.TabIndex = 2;
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1166, 736);
+            this.panel4.TabIndex = 7;
             // 
-            // flowLayoutPanel1
+            // panel2
             // 
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(10, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1376, 10);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(10, 742);
-            this.panel5.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(16, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(320, 31);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Danh sách kệ bán hàng";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(-7, -12);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(353, 43);
-            this.panel3.TabIndex = 17;
-            // 
-            // bt_xem
-            // 
-            this.bt_xem.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bt_xem.BackColor = System.Drawing.Color.Red;
-            this.bt_xem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_xem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_xem.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bt_xem.Location = new System.Drawing.Point(273, 15);
-            this.bt_xem.Name = "bt_xem";
-            this.bt_xem.Size = new System.Drawing.Size(106, 23);
-            this.bt_xem.TabIndex = 2;
-            this.bt_xem.Text = "Xem chi tiết";
-            this.bt_xem.UseVisualStyleBackColor = false;
-            this.bt_xem.Click += new System.EventHandler(this.bt_xem_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.bt_DX);
-            this.panel1.Controls.Add(this.bt_xem);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 742);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1386, 46);
-            this.panel1.TabIndex = 18;
-            // 
-            // bt_DX
-            // 
-            this.bt_DX.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bt_DX.BackColor = System.Drawing.Color.Red;
-            this.bt_DX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_DX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.bt_DX.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bt_DX.Location = new System.Drawing.Point(920, 15);
-            this.bt_DX.Name = "bt_DX";
-            this.bt_DX.Size = new System.Drawing.Size(106, 23);
-            this.bt_DX.TabIndex = 2;
-            this.bt_DX.Text = "Đề Xuất";
-            this.bt_DX.UseVisualStyleBackColor = false;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1166, 736);
+            this.panel2.TabIndex = 22;
             // 
             // US_HangCungUng
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Name = "US_HangCungUng";
-            this.Size = new System.Drawing.Size(1386, 788);
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(1166, 736);
+            this.panel1.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_Supplier)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button bt_TK;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button bt_xem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button bt_DX;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox txt_Search;
+        private System.Windows.Forms.DataGridView DGV_Supplier;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel2;
+        private Controls.RJButton bt_Show;
+        private Controls.RJButton bt_Del;
+        private Controls.RJButton bt_Recommend;
+        private Controls.RJButton bt_Search;
+        private System.Windows.Forms.Label label2;
+        private Controls.RJButton bt_Add;
     }
 }

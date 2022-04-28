@@ -16,46 +16,50 @@ namespace GiaoDien.Forms
         {
             InitializeComponent();
         }
-        public Button bt1
+        public Button btreconmend
         {
-            get { return bt_dexuat; }
+            get { return bt_Recommend; }
             set
             {
-                bt_dexuat = value;
+               
             }
         }
-        public Button bt2
+        public Button btDel
         {
-            get { return bt_xoaKe; }
+            get { return bt_Del; }
             set
             {
-                bt_xoaKe = value;
+               
             }
         }
-        public Button bt3
+        public Button btReturn
         {
-            get { return BT_TraHang; }
+            get { return bt_Return; }
             set
             {
-                BT_TraHang = value;
-            }
-        }
-        public Button bt4
-        {
-            get { return bt_xem; }
-            set
-            {
-                bt_xem = value;
+               
             }
         }
         public void Reload()
         {
             this.Visible = true;
         }
-        private void bt_xem_Click_1(object sender, EventArgs e)
+       
+
+        private void bt_xem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void bt_Show_Click(object sender, EventArgs e)
         {
             US_chitietKeHang us = new US_chitietKeHang();
             us.Dock = DockStyle.Fill;
+            if (btreconmend.Visible)
+            {
+                us.btShowAdminSale.Visible = false;
+            }
+            else us.btShow.Visible = false;
             this.Parent.Controls.Add(us);
             this.Visible = false;
             us.f = new US_chitietKeHang.DelegeateReload(Reload);

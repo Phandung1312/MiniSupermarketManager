@@ -17,7 +17,12 @@ namespace GiaoDien.Forms
             InitializeComponent();
         }
 
-        private void bt_xem_Click(object sender, EventArgs e)
+        public void Reload()
+        {
+            this.Visible = true;
+        }
+     
+        private void bt_Show_Click(object sender, EventArgs e)
         {
             US_AddUpdateDX us = new US_AddUpdateDX();
             us.Dock = DockStyle.Fill;
@@ -25,29 +30,19 @@ namespace GiaoDien.Forms
             this.Visible = false;
             us.d = new US_AddUpdateDX.DelegeateReload(Reload);
         }
-        public void Reload()
+
+        private void bt_Add_Click(object sender, EventArgs e)
         {
-            this.Visible = true;
-        }
-        private void bt_Them_Click(object sender, EventArgs e)
-        {
-            
             US_AddUpdateDX ds = new US_AddUpdateDX();
             ds.Dock = DockStyle.Fill;
             this.Parent.Controls.Add(ds);
-            ds.ButtonUpdate.Text = "OK";
-            ds.label.Visible = false;
-            ds.txt1.Visible = false;
+            ds.btAddUpdate.Text = "Thêm";
             ds.txt2.Enabled = true;
             ds.txt3.Enabled = true;
             ds.txt4.Enabled = true;
-            ds.txt5.Enabled = true;
-            ds.txt6.Enabled = true;
             ds.dtNX.Enabled = true;
             this.Visible = false;
             ds.d = new US_AddUpdateDX.DelegeateReload(Reload);
-            
-  
         }
     }
 }
