@@ -47,11 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BLL_Bill.cs" />
+    <Compile Include="BLL\BLL_Login.cs" />
     <Compile Include="Controls\RJLabel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DAL\DAL_Bill.cs" />
+    <Compile Include="DAL\DAL_Login.cs" />
     <Compile Include="DAL\DBHelper.cs" />
+    <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Staff.cs" />
     <Compile Include="DTO\Bill.cs" />
     <Compile Include="DTO\BillDetail.cs" />
     <Compile Include="GUI\Forms\FormLogin.cs">
