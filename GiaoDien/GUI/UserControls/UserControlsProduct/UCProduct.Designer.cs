@@ -56,10 +56,10 @@
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonExit.Location = new System.Drawing.Point(259, 435);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonExit.Location = new System.Drawing.Point(129, 586);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(86, 41);
+            this.buttonExit.Size = new System.Drawing.Size(115, 50);
             this.buttonExit.TabIndex = 4;
             this.buttonExit.Text = "Trở Lại";
             this.buttonExit.TextColor = System.Drawing.SystemColors.ControlText;
@@ -76,10 +76,10 @@
             this.buttonShow.FlatAppearance.BorderSize = 0;
             this.buttonShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonShow.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonShow.Location = new System.Drawing.Point(526, 435);
-            this.buttonShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonShow.Location = new System.Drawing.Point(514, 586);
+            this.buttonShow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonShow.Name = "buttonShow";
-            this.buttonShow.Size = new System.Drawing.Size(95, 41);
+            this.buttonShow.Size = new System.Drawing.Size(127, 50);
             this.buttonShow.TabIndex = 5;
             this.buttonShow.Text = "Xem Thông Tin";
             this.buttonShow.TextColor = System.Drawing.SystemColors.ControlText;
@@ -96,10 +96,10 @@
             this.buttonAdd.FlatAppearance.BorderSize = 0;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonAdd.Location = new System.Drawing.Point(790, 435);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAdd.Location = new System.Drawing.Point(911, 586);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(91, 41);
+            this.buttonAdd.Size = new System.Drawing.Size(121, 50);
             this.buttonAdd.TabIndex = 6;
             this.buttonAdd.Text = "Thêm Mới";
             this.buttonAdd.TextColor = System.Drawing.SystemColors.ControlText;
@@ -109,10 +109,10 @@
             // textBoxSearch
             // 
             this.textBoxSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxSearch.Location = new System.Drawing.Point(707, 129);
-            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxSearch.Location = new System.Drawing.Point(825, 210);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(122, 20);
+            this.textBoxSearch.Size = new System.Drawing.Size(161, 22);
             this.textBoxSearch.TabIndex = 7;
             // 
             // rjLabel2
@@ -125,10 +125,9 @@
             this.rjLabel2.BorderSize = 0;
             this.rjLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.rjLabel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rjLabel2.Location = new System.Drawing.Point(462, 23);
-            this.rjLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.rjLabel2.Location = new System.Drawing.Point(432, 41);
             this.rjLabel2.Name = "rjLabel2";
-            this.rjLabel2.Size = new System.Drawing.Size(233, 75);
+            this.rjLabel2.Size = new System.Drawing.Size(311, 92);
             this.rjLabel2.TabIndex = 9;
             this.rjLabel2.Text = "Danh Sách Hàng Hóa";
             this.rjLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -137,20 +136,21 @@
             // rjButton1
             // 
             this.rjButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.rjButton1.BackColor = System.Drawing.SystemColors.Control;
+            this.rjButton1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton1.BorderRadius = 0;
             this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;
             this.rjButton1.Image = global::GiaoDien.Properties.Resources.Magnifier;
-            this.rjButton1.Location = new System.Drawing.Point(844, 126);
+            this.rjButton1.Location = new System.Drawing.Point(993, 203);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(29, 29);
+            this.rjButton1.Size = new System.Drawing.Size(39, 36);
             this.rjButton1.TabIndex = 10;
             this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = true;
+            this.rjButton1.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -164,12 +164,12 @@
             this.GiaNha,
             this.GiaBan,
             this.SoLuong});
-            this.dataGridView1.Location = new System.Drawing.Point(233, 171);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(129, 248);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(802, 235);
+            this.dataGridView1.Size = new System.Drawing.Size(903, 289);
             this.dataGridView1.TabIndex = 11;
             // 
             // STT
@@ -223,9 +223,9 @@
             // 
             // UCProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.rjLabel2);
@@ -233,9 +233,9 @@
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonShow);
             this.Controls.Add(this.buttonExit);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCProduct";
-            this.Size = new System.Drawing.Size(1155, 515);
+            this.Size = new System.Drawing.Size(1166, 736);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

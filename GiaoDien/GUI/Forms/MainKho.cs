@@ -15,7 +15,19 @@ namespace GiaoDien.Forms
         public MainKho()
         {
             InitializeComponent();
-            this.panel5.Visible = false;
+            this.panelSubKho.Visible = false;
+        }
+        public void AddUserControl(UserControl uc)
+        {
+            this.panelDesktop.Controls.Clear();
+            this.panelSubKho.Visible = false;
+            this.panelDesktop.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
+        }
+        private void buttonSchedule_Click(object sender, EventArgs e)
+        {
+            var uc=new UCCalendar();
+            AddUserControl(uc);
         }
     }
 }

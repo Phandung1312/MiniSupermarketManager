@@ -20,27 +20,18 @@ namespace GiaoDien.Forms
             InitializeComponent();
            
         }
-
-        public void OpenChildForm(Form childForm, object sender)
+        public void AddUserControl(UserControl uc)
         {
-            if (activeForm != null)
-            {
-                activeForm.Close();
-            }
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            this.panelDesktop.Controls.Add(childForm);
-            this.panelDesktop.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-
+            this.panelDesktop.Controls.Clear();
+            this.panelDesktop.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
         }
 
-       
 
-        
+
+
+
+
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -67,6 +58,12 @@ namespace GiaoDien.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonSchdule_Click(object sender, EventArgs e)
+        {
+            var uc = new UCCalendar();
+            AddUserControl(uc);
         }
     }
 }

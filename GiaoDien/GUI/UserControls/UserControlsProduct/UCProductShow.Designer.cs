@@ -66,7 +66,7 @@
             this.rjLabel1.BorderSize = 0;
             this.rjLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.rjLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rjLabel1.Location = new System.Drawing.Point(333, 9);
+            this.rjLabel1.Location = new System.Drawing.Point(450, 25);
             this.rjLabel1.Name = "rjLabel1";
             this.rjLabel1.Size = new System.Drawing.Size(313, 92);
             this.rjLabel1.TabIndex = 0;
@@ -283,7 +283,7 @@
             this.panel1.Controls.Add(this.rjLabel8);
             this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.rjLabel9);
-            this.panel1.Location = new System.Drawing.Point(85, 124);
+            this.panel1.Location = new System.Drawing.Point(202, 140);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(773, 423);
             this.panel1.TabIndex = 17;
@@ -368,7 +368,7 @@
             this.buttonOk.FlatAppearance.BorderSize = 0;
             this.buttonOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOk.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonOk.Location = new System.Drawing.Point(695, 566);
+            this.buttonOk.Location = new System.Drawing.Point(812, 582);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(94, 50);
             this.buttonOk.TabIndex = 19;
@@ -387,7 +387,7 @@
             this.buttonCancle.FlatAppearance.BorderSize = 0;
             this.buttonCancle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonCancle.Location = new System.Drawing.Point(154, 566);
+            this.buttonCancle.Location = new System.Drawing.Point(271, 582);
             this.buttonCancle.Name = "buttonCancle";
             this.buttonCancle.Size = new System.Drawing.Size(94, 50);
             this.buttonCancle.TabIndex = 18;
@@ -400,13 +400,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.buttonCancle);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.rjLabel1);
             this.Name = "UCProductShow";
-            this.Size = new System.Drawing.Size(915, 634);
+            this.Size = new System.Drawing.Size(1166, 736);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

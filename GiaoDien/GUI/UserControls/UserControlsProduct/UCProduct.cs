@@ -25,6 +25,7 @@ namespace GiaoDien.Forms
             var uc = new UCProductShow();
             this.Visible = false;
             this.Parent.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
             uc.delReload = new UCProductShow.MyDelegate(Reload);
 
         }
