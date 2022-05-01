@@ -204,6 +204,7 @@
             this.button7.Text = "Thống Kê Doanh Thu";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -221,6 +222,7 @@
             this.button6.Text = "Thống Kê Lương       ";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -239,6 +241,7 @@
             this.button5.Text = "Thống Kê                  ";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -313,6 +316,7 @@
             this.button1.Text = "Nhân viên                ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel4
             // 

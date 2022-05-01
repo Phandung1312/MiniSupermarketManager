@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GiaoDien.Forms.QLNV;
+using GiaoDien.Forms.ThongKe.TKLuong;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 
 
@@ -36,6 +39,30 @@ namespace GiaoDien.Forms
         private void buttonProduct_Click(object sender, EventArgs e)
         {
             var uc = new UCProduct();
+            AddUserControl(uc);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.panelSubTK.Visible = (!this.panelSubTK.Visible) ? true : false;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            var uc = new UCLuong();
+            AddUserControl(uc);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            var uc = new UCDoanhThu();
+            AddUserControl(uc);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var uc = new QLNV.QLNV();
             AddUserControl(uc);
         }
     }

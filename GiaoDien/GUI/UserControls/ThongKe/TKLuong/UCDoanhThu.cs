@@ -16,10 +16,28 @@ namespace GiaoDien.Forms.ThongKe.TKLuong
         {
             InitializeComponent();
         }
-
+        public void AddUserControl(UserControl uc)
+        {
+            this.panelTK.Controls.Clear();
+          //  this.panelSubTK.Visible = false;
+            this.panelTK.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void theoMặtHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var uc = new UCDoanhThu_MatHang();
+            AddUserControl(uc);
+        }
+
+        private void theoHãngCungỨngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var uc = new UCDoanhThu_HangCU();
+            AddUserControl(uc);
         }
     }
 }

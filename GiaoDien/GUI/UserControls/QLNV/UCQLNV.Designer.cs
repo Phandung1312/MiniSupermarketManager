@@ -1,6 +1,6 @@
 ﻿namespace GiaoDien.Forms.QLNV
 {
-    partial class UCQLNV
+    partial class QLNV
     {
         /// <summary> 
         /// Required designer variable.
@@ -56,9 +56,9 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(187, 279);
+            this.listView1.Location = new System.Drawing.Point(51, 145);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1167, 413);
+            this.listView1.Size = new System.Drawing.Size(1056, 365);
             this.listView1.TabIndex = 49;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -89,7 +89,7 @@
             // 
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(953, 185);
+            this.textBox3.Location = new System.Drawing.Point(731, 96);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(334, 34);
             this.textBox3.TabIndex = 47;
@@ -98,7 +98,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::GiaoDien.Properties.Resources._273793115_311509870951971_7894980111370829672_n;
-            this.pictureBox1.Location = new System.Drawing.Point(1293, 186);
+            this.pictureBox1.Location = new System.Drawing.Point(1071, 97);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -116,13 +116,14 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rjButton1.Location = new System.Drawing.Point(346, 83);
+            this.rjButton1.Location = new System.Drawing.Point(49, 30);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(212, 59);
+            this.rjButton1.Size = new System.Drawing.Size(184, 50);
             this.rjButton1.TabIndex = 59;
             this.rjButton1.Text = "Thêm";
             this.rjButton1.TextColor = System.Drawing.SystemColors.ControlText;
             this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
             // rjButton2
             // 
@@ -135,9 +136,9 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rjButton2.Location = new System.Drawing.Point(1007, 83);
+            this.rjButton2.Location = new System.Drawing.Point(921, 30);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(212, 59);
+            this.rjButton2.Size = new System.Drawing.Size(184, 50);
             this.rjButton2.TabIndex = 60;
             this.rjButton2.Text = "Xem danh sách";
             this.rjButton2.TextColor = System.Drawing.SystemColors.ControlText;
@@ -154,9 +155,9 @@
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rjButton3.Location = new System.Drawing.Point(187, 774);
+            this.rjButton3.Location = new System.Drawing.Point(51, 666);
             this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(212, 59);
+            this.rjButton3.Size = new System.Drawing.Size(184, 50);
             this.rjButton3.TabIndex = 61;
             this.rjButton3.Text = "Xóa";
             this.rjButton3.TextColor = System.Drawing.SystemColors.ControlText;
@@ -173,13 +174,14 @@
             this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rjButton4.Location = new System.Drawing.Point(695, 774);
+            this.rjButton4.Location = new System.Drawing.Point(520, 666);
             this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(212, 59);
+            this.rjButton4.Size = new System.Drawing.Size(184, 50);
             this.rjButton4.TabIndex = 62;
             this.rjButton4.Text = "Cập nhật";
             this.rjButton4.TextColor = System.Drawing.SystemColors.ControlText;
             this.rjButton4.UseVisualStyleBackColor = false;
+            this.rjButton4.Click += new System.EventHandler(this.rjButton4_Click);
             // 
             // rjButton5
             // 
@@ -192,15 +194,16 @@
             this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.rjButton5.Location = new System.Drawing.Point(1142, 774);
+            this.rjButton5.Location = new System.Drawing.Point(923, 666);
             this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(212, 59);
+            this.rjButton5.Size = new System.Drawing.Size(184, 50);
             this.rjButton5.TabIndex = 63;
             this.rjButton5.Text = "Xem chi tiết";
             this.rjButton5.TextColor = System.Drawing.SystemColors.ControlText;
             this.rjButton5.UseVisualStyleBackColor = false;
+            this.rjButton5.Click += new System.EventHandler(this.rjButton5_Click);
             // 
-            // UCQLNV
+            // QLNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -212,8 +215,8 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox3);
-            this.Name = "UCQLNV";
-            this.Size = new System.Drawing.Size(1555, 906);
+            this.Name = "QLNV";
+            this.Size = new System.Drawing.Size(1166, 736);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

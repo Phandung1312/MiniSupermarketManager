@@ -16,10 +16,21 @@ namespace GiaoDien.Forms.QLNV
         {
             InitializeComponent();
         }
-
+        public void AddUserControl(UserControl uc)
+        {
+            this.Controls.Clear();
+            this.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
+        }
         private void rjButton1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            var uc = new QLNV();
+            AddUserControl(uc);
         }
     }
 }
