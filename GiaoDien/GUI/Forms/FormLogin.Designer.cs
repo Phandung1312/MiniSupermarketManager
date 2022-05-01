@@ -29,20 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPassWord = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.rjButton1 = new GiaoDien.Controls.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btHidePass = new System.Windows.Forms.Button();
+            this.btShowPass = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lNontification = new System.Windows.Forms.Label();
+            this.rjBtLogin = new GiaoDien.Controls.RJButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -50,13 +52,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txtPassWord
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(467, 286);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(278, 22);
-            this.textBox2.TabIndex = 13;
+            this.txtPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassWord.Location = new System.Drawing.Point(467, 286);
+            this.txtPassWord.Name = "txtPassWord";
+            this.txtPassWord.PasswordChar = '*';
+            this.txtPassWord.Size = new System.Drawing.Size(278, 22);
+            this.txtPassWord.TabIndex = 13;
             // 
             // txtUser
             // 
@@ -99,57 +102,38 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Quản lí siêu thị mini";
             // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.DarkOrange;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.DarkOrange;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 5;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(524, 364);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(163, 36);
-            this.rjButton1.TabIndex = 17;
-            this.rjButton1.Text = "Đăng nhập";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click_1);
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btHidePass);
+            this.panel1.Controls.Add(this.btShowPass);
             this.panel1.Location = new System.Drawing.Point(751, 286);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(60, 22);
+            this.panel1.Size = new System.Drawing.Size(45, 22);
             this.panel1.TabIndex = 20;
             // 
-            // button3
+            // btHidePass
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button3.Image = global::GiaoDien.Properties.Resources.invisible_24px;
-            this.button3.Location = new System.Drawing.Point(23, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(23, 22);
-            this.button3.TabIndex = 22;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.btHidePass.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btHidePass.Image = global::GiaoDien.Properties.Resources.invisible_24px;
+            this.btHidePass.Location = new System.Drawing.Point(28, 0);
+            this.btHidePass.Name = "btHidePass";
+            this.btHidePass.Size = new System.Drawing.Size(28, 22);
+            this.btHidePass.TabIndex = 22;
+            this.btHidePass.UseVisualStyleBackColor = true;
+            this.btHidePass.Visible = false;
+            this.btHidePass.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // button1
+            // btShowPass
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.Image = global::GiaoDien.Properties.Resources.eye_24px;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(23, 22);
-            this.button1.TabIndex = 21;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btShowPass.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btShowPass.Font = new System.Drawing.Font(".VnArial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btShowPass.Image = global::GiaoDien.Properties.Resources.eye_24px;
+            this.btShowPass.Location = new System.Drawing.Point(0, 0);
+            this.btShowPass.Name = "btShowPass";
+            this.btShowPass.Size = new System.Drawing.Size(28, 22);
+            this.btShowPass.TabIndex = 21;
+            this.btShowPass.UseVisualStyleBackColor = true;
+            this.btShowPass.Click += new System.EventHandler(this.Button1_Click);
             // 
             // pictureBox4
             // 
@@ -209,6 +193,49 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(467, 326);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 15);
+            this.label4.TabIndex = 21;
+            // 
+            // lNontification
+            // 
+            this.lNontification.AutoSize = true;
+            this.lNontification.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNontification.ForeColor = System.Drawing.Color.Red;
+            this.lNontification.Location = new System.Drawing.Point(468, 326);
+            this.lNontification.Name = "lNontification";
+            this.lNontification.Size = new System.Drawing.Size(41, 15);
+            this.lNontification.TabIndex = 22;
+            this.lNontification.Text = "label5";
+            this.lNontification.Visible = false;
+            // 
+            // rjBtLogin
+            // 
+            this.rjBtLogin.BackColor = System.Drawing.Color.DarkOrange;
+            this.rjBtLogin.BackgroundColor = System.Drawing.Color.DarkOrange;
+            this.rjBtLogin.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjBtLogin.BorderRadius = 5;
+            this.rjBtLogin.BorderSize = 0;
+            this.rjBtLogin.FlatAppearance.BorderSize = 0;
+            this.rjBtLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjBtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjBtLogin.ForeColor = System.Drawing.Color.White;
+            this.rjBtLogin.Location = new System.Drawing.Point(524, 364);
+            this.rjBtLogin.Name = "rjBtLogin";
+            this.rjBtLogin.Size = new System.Drawing.Size(163, 36);
+            this.rjBtLogin.TabIndex = 17;
+            this.rjBtLogin.Text = "Đăng nhập";
+            this.rjBtLogin.TextColor = System.Drawing.Color.White;
+            this.rjBtLogin.UseVisualStyleBackColor = false;
+            this.rjBtLogin.Click += new System.EventHandler(this.rjBtLogin_Click);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -216,13 +243,15 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(817, 512);
+            this.Controls.Add(this.lNontification);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.rjBtLogin);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPassWord);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -247,16 +276,18 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPassWord;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Controls.RJButton rjButton1;
+        private Controls.RJButton rjBtLogin;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btHidePass;
+        private System.Windows.Forms.Button btShowPass;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lNontification;
     }
 }
